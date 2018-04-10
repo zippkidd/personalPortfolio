@@ -1,0 +1,248 @@
+/* Resets */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+  margin:0;
+  padding:0;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+a, a img, a:hover, a:hover img {
+  -webkit-transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out;
+  -ms-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+  text-decoration: none;
+}
+/* 1rem = 10px  */
+html,body {
+  min-height: 100%;
+  height: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+/* Common/ Parallax Background */
+body {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  font-weight: 400;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  background-image: url("../portfolio/images/philadelphia-B&W-162KB.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+div.wrapper {
+  position: relative;
+  margin: 0 auto;
+  height: 100%;
+  min-height: 100%;
+  /* background-image: url("../portfolio/images/philadelphia-B&W-162KB.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; NOTE!! use body not wrapper for parallax */
+}
+/* Scroll Buttons */
+div.intro div.introBox a.scrollDown {
+  position: absolute;
+  top: 91%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #2b2b2b;
+}
+footer a.scrollUp {
+  position: fixed;
+  top: 93vh;
+  right: -3.5rem;
+  color: rgba(179,175,170,0.8);
+  z-index: 2;
+}
+footer a.slideIn {
+  transform: translateX(-4.2rem);
+}
+/* Intro */
+div.intro div.container-fluid {
+  position: relative;
+  height: 100vh;
+  border: 5rem solid rgba(255,255,255,0);
+  background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+  box-shadow: inset 0 0 6rem rgba(0,0,0,.14);
+}
+div.intro div.introBox {
+  width: 70vw;
+  margin: 0 auto;
+}
+div.intro div.introContent {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 70vw;
+}
+div.intro div.introContent h1 {
+  margin-bottom: 3rem;
+  font-size: 120%;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .25rem;
+  color: #777;
+}
+div.intro div.introContent p {
+  margin-bottom: 6rem;
+  font-size: 180%;
+  color: #33234c;
+  line-height: 160%;
+  width: 95%;
+}
+div.intro div.introContent a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-width: .3rem;
+  border-style: solid;
+  border-color: #b3b3b6;
+  border-radius: .7rem;
+  -moz-border-radius: .7rem;
+  -webkit-border-radius: .7rem;
+  color: #55665a;
+  font-size: 87.5%;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .14rem;
+  background: transparent;
+  box-shadow: 0 .8rem 1.6rem rgba(0,0,0,.02);
+}
+div.intro div.introContent a:hover {
+  background: #fcfcfc;
+  color: #454;
+  box-shadow: 0 .8rem 1.6rem rgba(0,0,0,.05);
+  border-color: #999;
+}
+div.intro div.links {
+  display: flex;
+  justify-content: space-around;
+}
+/* Showcase */
+div.showcase {
+  /* border-bottom: 10rem solid rgba(255, 255, 255, 0);
+  background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box; */
+  margin-bottom: 5rem;
+}
+div.showcase div.container-fluid div.content div[class^="col"] {
+  border: .7rem solid rgba(255, 255, 255, 0);
+  background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-radius: 2.5rem;
+  -moz-border-radius: 2.5rem;
+  -webkit-border-radius: 2.5rem;
+  height: 35vw;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.showcase div.container-fluid div.overlay div[class^="col"] {
+  background-color: #e5e5e5;
+  opacity: 1;
+  -webkit-transition: all .5s ease-in;
+  -moz-transition: all .5s ease-in;
+  -ms-transition: all .5s ease-in;
+  -o-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+div.showcase div.container-fluid div.overlay div[class^="col"]:hover {
+  opacity: 0;
+}
+div.showcase div.container-fluid div.underlay div[class^="col"] {
+  background-color: #f5f5f5;
+}
+div.showcase div.container-fluid {
+  position: relative;
+}
+div.showcase div.container-fluid div.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+div.showcase div.container-fluid div.overlay img.screenshot {
+  display: block;
+  width: 100%;
+  height: auto;
+  opacity: inherit;
+}
+/* Footer */
+footer div.outro div.outroBox {
+  height: 7rem;
+  width: 85vw;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+footer div.outro div.outroBox a {
+  color: #a5a5a5;
+}
+footer div.outro div.outroBox a:hover {
+  color: #4d4d4d;
+}
+/* Media Queries */
+@media screen and (max-width: 767px) {
+  /* Remove Parallax Background */
+  body {
+    background: none;
+  }
+  /* Scroll Buttons */
+  div.intro div.introBox a.scrollDown {
+    top: 87%;
+    color: #6c6c6c;
+  }
+  /* Intro */
+  div.intro div.container-fluid {
+    border: none;
+  }
+  div.intro div.introBox {
+    width: 85vw;
+  }
+  div.intro div.introContent {
+    width: 85vw;
+  }
+  /* Grid */
+  div.showcase {
+    margin-bottom: 0;
+  }
+  div.showcase div.container-fluid div.overlay {
+    position: relative;
+  }
+  div.showcase div.container-fluid div.overlay div[class^="col"] {
+    background-color: #f5f5f5;
+  }
+  div.showcase div.container-fluid div.overlay div[class^="col"]:hover {
+    opacity: 1;
+  }
+  div.showcase div.container-fluid div.content div[class^="col"] {
+    border-width: 0;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    height: 32vh; /* NOTE: probably unnecessary, standard 35vw seems fine */
+  }
+  /* Footer */
+  footer div.outro div.outroBox {
+    width: 100vw;
+  }
+}
