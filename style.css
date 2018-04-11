@@ -28,7 +28,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.4;
   font-weight: 400;
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Tajawal', 'Helvetica', 'Arial', sans-serif;
   background-image: url("../portfolio/images/philadelphia-B&W-162KB.jpg");
   background-attachment: fixed;
   background-position: center;
@@ -62,7 +62,7 @@ footer a.scrollUp {
   z-index: 2;
 }
 footer a.slideIn {
-  transform: translateX(-4.2rem);
+  transform: translateX(-4.4rem);
 }
 /* Intro */
 div.intro div.container-fluid {
@@ -91,7 +91,7 @@ div.intro div.introContent h1 {
   font-size: 120%;
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: .25rem;
+  letter-spacing: .175rem;
   color: #777;
 }
 div.intro div.introContent p {
@@ -214,6 +214,7 @@ footer div.outro div.outroBox a:hover {
   /* Intro */
   div.intro div.container-fluid {
     border: none;
+    box-shadow: inset 0 0 2rem rgba(0,0,0,.14);
   }
   div.intro div.introBox {
     width: 85vw;
