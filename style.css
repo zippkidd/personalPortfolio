@@ -130,10 +130,6 @@ div.intro div.links {
 }
 /* Showcase */
 div.showcase {
-  /* border-bottom: 10rem solid rgba(255, 255, 255, 0);
-  background-clip: padding-box;
-  -moz-background-clip: padding-box;
-  -webkit-background-clip: padding-box; */
   margin-bottom: 5rem;
 }
 div.showcase div.container-fluid div.content div[class^="col"] {
@@ -240,7 +236,7 @@ footer div.outro div.outroBox a:hover {
     border-radius: 0;
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
-    height: 32vh; /* NOTE: probably unnecessary, standard 35vw seems fine */
+    height: 28rem;
   }
   /* Footer */
   footer div.outro div.outroBox {
